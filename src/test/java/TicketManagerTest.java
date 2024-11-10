@@ -166,6 +166,6 @@ public class TicketManagerTest {
         Ticket[] actual = manager.search("MSK", "SPB", comparator);
         Ticket[] expected = {ticket8, ticket1, ticket2, ticket6, ticket4};
 
-
+        assertArrayEquals(expected, actual);
     }
 }
